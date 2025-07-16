@@ -1,0 +1,35 @@
+body {
+    background-color: #f9e79f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.table {
+    background-color: #faaa8b;
+    grid-column: auto;
+    flex-direction: column;
+    columns: 2;
+    border: 1px solid;    
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    color: #6e2c00;
+    text-align: center;
+}
+
+.imagenguiso {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    
+    font-style: italic;
+}
