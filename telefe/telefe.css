@@ -1,0 +1,27 @@
+.esferas {
+  position: relative; /* Necesario para posicionar los pseudoelementos */
+  width: 50px;
+  height: 50px;
+  background-color: blue; /* Color de la esfera central */
+  border-radius: 50%;
+}
+
+.esferas::before {
+  content: ""; /* Importante para que ::before y ::after funcionen */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  left: 150px; /* Posición de la primera esfera */
+}
+
+.esferas::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+  left: 75px; /* Posición de la tercera esfera */
+}
