@@ -1,0 +1,71 @@
+/* Estilos base (móvil first) */
+@media screen and (max-width: 767px) {
+  .container, .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.links {
+ margin-top: 1rem;
+}
+}
+
+/* Tablet (768px y superior) */
+@media screen and (min-width: 768px) , (max-width: 1023px) {
+  .container, .social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Desktop (1024px y superior) */
+@media screen and (min-width: 1024px) {
+  .container, .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0%;
+    text-align: left;
+  }}
+
+body {
+  font-family: 'Comic sans', cursive;
+  background-color: aqua;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: rgb(252, 204, 204);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ec77e9;
+  margin-bottom: 20px;
+}
+
+.links {
+  margin-left:0%;
+  text-decoration: none;
+  }
+
+a:hover{
+    color: rgb(226, 74, 188);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}

@@ -23,23 +23,23 @@ body {
 }
 
 h1{
-    font-size: 8rem;
-}
-
-h2 {
-    font-size: 6rem;
-}
-
-h3 {
     font-size: 4rem;
 }
 
-h4 {
+h2 {
     font-size: 3rem;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
 span {
-	font-size: 9px;
+	font-size: 6px;
 	line-height: 1;
 }
 
@@ -49,7 +49,7 @@ h1, h2, h3 {
 
 /* Navegacion principal*/
 .nav-bg { 
-    padding: 1,5rem;
+    padding: 1.5rem;
     text-align: center; 
 }
 
@@ -57,7 +57,7 @@ h1, h2, h3 {
     padding: 1rem; 
     text-decoration: none;
     margin-inline: 4rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--color3);
     }
@@ -65,6 +65,12 @@ h1, h2, h3 {
 .navegacion-principal a:hover {
     cursor: pointer;
     color: var(--color4);
+}
+
+.link {
+     cursor: pointer;
+    color: var(--color4);
+    font-size: 3rem;
 }
 
 /* Imagen pricipal de inicio */
@@ -76,27 +82,26 @@ h1, h2, h3 {
     padding: 2rem;
     display: flex;
     justify-content: center;
-    
 }
+
 .containerimagenfrente img {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
-    
+    object-fit: cover; /* Use 'contain' if you prefer the whole image visible */
 }
 
 /* Boton para mostrar mapa */
 
 .boton {
     color: var(--color4);
-    font-size: 5rem;
+    font-size: 3rem;
     text-decoration: none ;
     display: flex;
     justify-content: center;
     font-weight: bold;
-    
 }
+
 .boton:visited {
     color: var(--color4);
 }
@@ -113,25 +118,41 @@ h1, h2, h3 {
 }
 /* MENU */
 
-.menu-kids {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 15px;
-	grid-area: kids;
-    margin-left: 2rem;
+.card-group {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ajusta el espacio entre las tarjetas */
 }
 
-@media (min-width: 230px) {
-  .menu-options {
-    grid-template-columns: 100%;
-    grid-template-areas:"kids" "
-    }
+.card {
+  width: calc(33.33% - 20px); /* Tres tarjetas por fila, con un pequeño margen */
+  margin-bottom: 20px; /* Espacio entre filas */
+  box-sizing: border-box; /* Incluye padding y border en el ancho */
+  border: 1px solid var(--color2); /* Borde opcional para las tarjetas */
+  border-radius: 5px; /* Borde redondeado opcional */
+  overflow: hidden; /* Evita que el contenido sobresalga */
 }
-@media (min-width: 1023px) {
-  .menu-options {
-    grid-template-columns: 100%;
-    grid-template-areas:"kids" "
-    }
+
+.card img {
+  width:100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  margin-bottom: 1px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.card-text {
+  margin-bottom: 5px;
+  font-size: 1rem;
 }
 
 .menu-option {
@@ -139,20 +160,15 @@ h1, h2, h3 {
 }
 
 .fotos {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin: 2rem;
-}
+  display: flex; /*  Habilita el modelo de caja flexible */
+  }
 
-.fotococina {
-    width: 50%;
-    grid-row: 1/2;
-}
+.fotococina, .fotocartel {
+    width: 46%;
+  padding-inline: 1rem; /*  Espacio entre las imágenes */
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-.fotocartel {
-    width: 50%;
-    grid-row: 2/2;
 }
 
 /* Como llegar */
