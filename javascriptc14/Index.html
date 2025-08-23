@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Usuario</title>
+  </head>
+  <body>
+    <h2>Formulario de Registro</h2>
+    <form id="registroForm">
+      <label>Nombre: <input type="text" id="nombre" required /></label>
+      <label>Edad: <input type="number" id="edad" required /></label>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="mensaje"></div>
+    <script>
+      document
+        .getElementById('registroForm')
+        .addEventListener('submit', function (e) {
+          e.preventDefault();
+          const nombre = document.getElementById('nombre').value;
+          const edad = document.getElementById('edad').value;
+          document.getElementById(
+            'mensaje'
+          ).textContent = `¡Hola, ${nombre}! Tienes ${edad} años.`;
+        });
+    </script>
+  </body>
+</html>

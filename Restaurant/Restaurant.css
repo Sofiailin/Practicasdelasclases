@@ -76,7 +76,7 @@ h1, h2, h3 {
 /* Imagen pricipal de inicio */
 
 .containerimagenfrente {
-    width: 80vw;
+    width: 50%;
     height: auto;
     margin: 0 auto;
     padding: 2rem;
